@@ -7,7 +7,7 @@ var comments = require('./comments');
 
 // create server
 var server = http.createServer(function (req, res) {
-  // parse url
+  // parse u`rl
   var urlObj = url.parse(req.url, true);
   // get path
   var pathName = urlObj.pathname;
@@ -62,11 +62,3 @@ var server = http.createServer(function (req, res) {
     });
   }
 });
-
-// listen port
-server.listen(8080, function () {
-  console.log('Server is running...');
-});
-```
-
-##
